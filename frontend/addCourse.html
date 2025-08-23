@@ -653,7 +653,7 @@
             submitBtn.textContent = 'Adding Course...';
             submitBtn.disabled = true;
             
-            fetch('http://127.0.0.1:5000/api/courses', {
+            fetch('https://learncloud-ejbk.onrender.com/api/courses', {
                 method: 'POST',
                 body: formData,
                 headers: {

@@ -60,7 +60,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
 
     const formData = new FormData(this);
-    fetch('http://127.0.0.1:5000/api/register', {
+    fetch('https://learncloud-ejbk.onrender.com/api/register', {
         method: 'POST',
         body: formData,
     })

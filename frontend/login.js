@@ -71,7 +71,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     //     submitBtn.textContent = originalText;
     //     submitBtn.disabled = false;
     // }, 1500);
-    fetch('http://127.0.0.1:5000/api/login', {
+    fetch('https://learncloud-ejbk.onrender.com/api/login', {
         method: 'POST',
         body: formData
     })

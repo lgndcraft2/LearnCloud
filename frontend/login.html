@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <h1 class="form-title">Welcome Back</h1>
+            <p class="form-subtitle">Sign in to your account</p>
+        </div>
+
+        <div class="demo-credentials">
+            <strong>Demo credentials:</strong><br>
+            Username: demo@example.com<br>
+            Password: demo123
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+        <div id="successMessage" class="success-message"></div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Email or Username</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    placeholder="Enter your email or username" 
+                    required
+                    autocomplete="username"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-input">
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Enter your password" 
+                        required
+                        autocomplete="current-password"
+                    >
+                    <button type="button" class="password-toggle" onclick="togglePassword()">Show</button>
+                </div>
+            </div>
+
+            <div class="form-options">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Sign In</button>
+        </form>
+
+        <div class="divider">
+            <span>Or continue with</span>
+        </div>
+
+        <div class="social-login">
+            <a href="#" class="social-btn">
+                <span>📧</span>
+                Google
+            </a>
+            <a href="#" class="social-btn">
+                <span>👤</span>
+                Facebook
+            </a>
+        </div>
+
+        <div class="register-link">
+            Don't have an account? <a href="register.html">Sign up here</a>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

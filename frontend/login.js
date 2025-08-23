@@ -87,7 +87,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
             console.log("Login successful");
             showMessage('Login successful! Redirecting...', 'success');
             setTimeout(() => {
-                window.location.href = 'C:/Users/LGND/Desktop/Desktop Shii/api playground/frontend/dashboard.html';
+                window.location.href = 'dashboard.html';
             }, 1000);
         } else{
             showMessage('Invalid Credentials');

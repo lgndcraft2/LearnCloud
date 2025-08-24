@@ -10,7 +10,7 @@ from functools import wraps
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://learn-cloud.vercel.app"}})
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'heheheheheh'
